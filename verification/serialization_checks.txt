@@ -1,0 +1,42 @@
+=== REAL ENTITY SERIALIZATION VERIFICATION ===
+
+REAL ENTITY COUNT: 0
+
+JSON SERIALIZATION: SUCCESS
+
+[]
+
+
+# this is not fromt he code here is the terminal response for the verification code 
+
+(myenv) PS D:\LTTSTechgium\MCP> python verify_serialization.py
+[RENDER] Loaded 30 templates from D:\LTTSTechgium\MCP\symbol_templates.json
+2026-05-17 02:04:43,204 [cad_mcp.bridge] INFO FastMCP server object ready (lazy AutoCAD connection; no COM at import).
+2026-05-17 02:04:43,221 [cad_mcp.tools] INFO Registered 9 CAD MCP tools on FastMCP instance.
+2026-05-17 02:04:43,230 [cad_mcp.resources] INFO Registered MCP resources: cad://entities, cad://pipes, cad://drawing, cad://layers, cad://symbols, cad://selection/current, cad://entity/{handle}, cad://pipe/{handle}, cad://layer/{name}
+2026-05-17 02:04:43,233 [cad_mcp.prompts] INFO Prompt registration success: pid_assistant_prompt, pipe_routing_prompt, symbol_insertion_prompt, drawing_analysis_prompt
+[COM] Starting AutoCAD connection
+[COM] Trying GetObject
+[COM] GetObject failed: (-2147221021, 'Operation unavailable', None, None)
+[COM] Trying Dispatch
+[COM] Dispatch success
+[COM] ActiveDocument = Drawing1.dwg
+[COM] ModelSpace assigned
+[SYNC] Starting ModelSpace synchronization
+[SYNC] Rebuilding ownership graph from XData
+[SYNC] Existing handles count: 0
+[SYNC] Pipe segment handles to skip: 0
+[SYNC] Found 0 stale logical entities to remove
+[TOPO] Topology graph updated: {}
+[SYNC] Deleted handle cache retained: 0 entries
+[SYNC] Synchronization complete
+[COM] Connect success
+[SYNC] Starting ModelSpace synchronization
+[SYNC] Rebuilding ownership graph from XData
+[SYNC] Existing handles count: 0
+[SYNC] Pipe segment handles to skip: 0
+[SYNC] Found 0 stale logical entities to remove
+[TOPO] Topology graph updated: {}
+[SYNC] Deleted handle cache retained: 0 entries
+[SYNC] Synchronization complete
+Verification written to: verification\serialization_checks.txt

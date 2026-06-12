@@ -1,0 +1,16 @@
+=== MCP RESOURCE VERIFICATION ===
+
+Total Resources: 6
+
+name='entities_resource' title=None uri=AnyUrl('cad://entities') description='Return all tracked logical entities with topology metadata.' mimeType='text/plain' size=None icons=None annotations=None meta=None
+
+name='pipes_resource' title=None uri=AnyUrl('cad://pipes') description='Return only logical pipe entities.' mimeType='text/plain' size=None icons=None annotations=None meta=None
+
+name='drawing_resource' title=None uri=AnyUrl('cad://drawing') description='Return drawing metadata and connection status.' mimeType='text/plain' size=None icons=None annotations=None meta=None
+
+name='layers_resource' title=None uri=AnyUrl('cad://layers') description='Return available layer names.' mimeType='text/plain' size=None icons=None annotations=None meta=None
+
+name='symbols_resource' title=None uri=AnyUrl('cad://symbols') description='Return canonical symbol names and alias map.' mimeType='text/plain' size=None icons=None annotations=None meta=None
+
+name='selection_current_resource' title=None uri=AnyUrl('cad://selection/current') description='\n        Return current selection context.\n\n        Runtime does not currently expose selection read API, so this remains a\n        deterministic safe empty payload until such a reader is added.\n        ' mimeType='text/plain' size=None icons=None annotations=None meta=None
+

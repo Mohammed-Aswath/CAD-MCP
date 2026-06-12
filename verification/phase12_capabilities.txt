@@ -1,0 +1,12 @@
+=== MCP CAPABILITY NEGOTIATION VERIFICATION ===
+
+SERVER CAPABILITIES:
+{'tools': True, 'resources': True, 'prompts': True, 'streaming': False, 'websocket_transport': True, 'stdio_transport': True}
+
+NEGOTIATED CAPABILITIES:
+{'success': True, 'client_capabilities': {'tools': True, 'resources': True, 'prompts': True, 'streaming': True}, 'server_capabilities': {'tools': True, 'resources': True, 'prompts': True, 'streaming': False, 'websocket_transport': True, 'stdio_transport': True}, 'negotiated_capabilities': {'tools': True, 'resources': True, 'prompts': True, 'streaming': False, 'websocket_transport': True, 'stdio_transport': True}, 'unsupported_requested': {'streaming': True}}
+
+SERVER INFO:
+{'name': 'CAD-MCP-Server', 'version': '1.0.0', 'runtime': 'FastMCP', 'cad_backend': 'AutoCAD COM', 'supports_tools': True, 'supports_resources': True, 'supports_prompts': True}
+
+CAPABILITY NEGOTIATION: SUCCESS

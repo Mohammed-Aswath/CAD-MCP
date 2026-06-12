@@ -1,0 +1,13 @@
+=== PHASE 7 RUNTIME TEMPLATE VERIFICATION ===
+
+REAL ENTITY COUNT: 1
+
+TEST HANDLE: SYM_7184a251
+
+TEST URI: cad://entity/SYM_7184a251
+
+RESOURCE RESOLUTION: SUCCESS
+
+[ReadResourceContents(content='{\n  "success": true,\n  "data": {\n    "entity": {\n      "handle": "SYM_7184a251",\n      "entity_type": "symbol",\n      "block_name": "4_way_valve",\n      "insertion_point": [\n        -30.0,\n        0.0,\n        30.000000000000004\n      ],\n      "rotation": 0.0,\n      "scale": 100.0,\n      "layer": "0",\n      "primitive_count": 4,\n      "raw_type": null,\n      "vertices": null,\n      "radius": null,\n      "start_handle": null,\n      "end_handle": null,\n      "segment_handles": null,\n      "route_points": null,\n      "connected_entities": [],\n      "metadata": {\n        "block_reference": "4_way_valve"\n      }\n    }\n  }\n}', mime_type='text/plain', meta=None)]
+
+JSON SERIALIZATION: SUCCESS

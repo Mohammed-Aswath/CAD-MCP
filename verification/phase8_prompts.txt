@@ -1,0 +1,12 @@
+=== MCP PROMPT VERIFICATION ===
+
+Total Prompts: 4
+
+name='pid_assistant_prompt' title=None description='General P&ID CAD assistant behavior.' arguments=[] icons=None meta=None
+
+name='pipe_routing_prompt' title=None description='Orthogonal pipe routing guidance.' arguments=[] icons=None meta=None
+
+name='symbol_insertion_prompt' title=None description='Symbol insertion conventions.' arguments=[] icons=None meta=None
+
+name='drawing_analysis_prompt' title=None description='Guide analysis of CAD topology and metadata.' arguments=[] icons=None meta=None
+

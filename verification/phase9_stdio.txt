@@ -1,0 +1,5 @@
+=== STDIO TRANSPORT VERIFICATION ===
+
+STDIO transport import: SUCCESS
+run_stdio function exists: SUCCESS
+Function reference: <function run_stdio at 0x000001D0B9678360>

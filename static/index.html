@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoCAD CAD MCP Platform</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+    <main>
+        <h1>CAD MCP Platform</h1>
+        
+        <!-- AI Agent Chat Panel -->
+        <section class="panel chat-panel">
+            <h2>AI Agent Chat</h2>
+            <div id="chatLog" class="chat-log">
+                <div class="chat-message ai-message">
+                    <strong>AI:</strong> Hello! I'm your CAD assistant. I can help you:
+                    <ul style="margin-top: 8px; margin-bottom: 0;">
+                        <li>Add symbols: "Place a 4-way valve"</li>
+                        <li>Move equipment: "Move the pump 200 units right"</li>
+                        <li>Connect components: "Connect the valve to the motor"</li>
+                        <li>Answer questions: "How many valves are present?"</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input id="agentChatInput" type="text" placeholder="Enter command (e.g., 'Add a pump')" />
+                <button id="agentChatButton">Send</button>
+            </div>
+        </section>
+
+        <section class="panel">
+            <button id="connectButton">Connect to AutoCAD</button>
+            <button id="refreshButton">Refresh Entity List</button>
+            <button id="countButton">Count Symbols</button>
+            <button id="detailsButton">Get Drawing Details</button>
+            <span id="statusBadge">Disconnected</span>
+        </section>
+
+        <section class="panel grid-two">
+            <div>
+                <h2>Add Symbol</h2>
+                <label>Symbol Type</label>
+                <select id="symbolType">
+                    <option value="">Loading symbols...</option>
+                </select>
+                <label>X</label>
+                <input id="symbolX" type="number" value="0" />
+                <label>Y</label>
+                <input id="symbolY" type="number" value="0" />
+                <label>Scale</label>
+                <input id="symbolScale" type="number" value="100" />
+                <label>Rotation</label>
+                <input id="symbolRotation" type="number" value="0" />
+                <label>Layer</label>
+                <input id="symbolLayer" type="text" value="0" />
+                <button id="addSymbolButton">Add Symbol</button>
+            </div>
+
+            <div>
+                <h2>Entity Actions</h2>
+                <label>Selected Handle</label>
+                <input id="selectedHandle" type="text" readonly />
+                <label>Move DX</label>
+                <input id="moveDx" type="number" value="10" />
+                <label>Move DY</label>
+                <input id="moveDy" type="number" value="0" />
+                <label>Rotate Angle</label>
+                <input id="rotateAngle" type="number" value="45" />
+                <button id="moveButton">Move Symbol</button>
+                <button id="rotateButton">Rotate Symbol</button>
+                <button id="deleteButton">Delete Symbol</button>
+            </div>
+        </section>
+
+        <section class="panel grid-two">
+            <div>
+                <h2>Pipe Connection</h2>
+                <label>Start Handle</label>
+                <input id="startHandle" type="text" />
+                <label>End Handle</label>
+                <input id="endHandle" type="text" />
+                <button id="connectPipeButton">Connect Instruments</button>
+            </div>
+
+            <div>
+                <h2>Entity Details</h2>
+                <pre id="detailsOutput">Select an entity from the list to display metadata.</pre>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Entity List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Handle</th>
+                        <th>Type</th>
+                        <th>Block</th>
+                        <th>Layer</th>
+                        <th>Point</th>
+                        <th>Rotation</th>
+                    </tr>
+                </thead>
+                <tbody id="entityTable"></tbody>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>Logs</h2>
+            <pre id="eventLog"></pre>
+        </section>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>

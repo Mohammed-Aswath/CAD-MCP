@@ -1,0 +1,4 @@
+=== WEBSOCKET TRANSPORT VERIFICATION ===
+
+WebSocket transport initialization: SUCCESS
+Transport object: <cad_mcp.transport.websocket_transport.MCPWebSocketTransport object at 0x00000224EC623ED0>

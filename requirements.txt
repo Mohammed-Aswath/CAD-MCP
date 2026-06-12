@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pywin32
+pydantic
+python-dotenv
+google-generativeai
+mcp
+anyio
